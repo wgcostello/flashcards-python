@@ -1,2 +1,2 @@
 # flashcards-python
-Flashcards (Python) Project Project from JetBrains Academy Python stream
+Flashcards (Python) Project from JetBrains Academy Python stream
