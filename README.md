@@ -1,7 +1,9 @@
 # Flashcards
 
 This program allows you to set up a series of flashcards to test your memory 
-recall. This was created by completing the 
+recall.
+
+This was created by completing the 
 [Flashcards (Python) Project](https://hyperskill.org/projects/127) on 
 JetBrains Academy.
 
