@@ -1,7 +1,7 @@
 # Flashcards
 
-This program allows you to set up a series of flashcards to test your memory 
-recall.
+This program allows users to set up a series of flashcards to test their 
+memory recall.
 
 This was created by completing the 
 [Flashcards (Python) Project](https://hyperskill.org/projects/127) on 
@@ -9,7 +9,7 @@ JetBrains Academy.
 
 ## How to Use
 
-When the program is run, you will be presented with the following choices:
+When the program is run, the user is presented with the following options:
 
 ### Add
 
@@ -26,7 +26,7 @@ Imports a set of flashcards from a CSV file.
 
 ### Export
 
-Eports the set of flashcards in memory to a file.
+Exports the set of flashcards in memory to a file.
 
 ### Ask
 
