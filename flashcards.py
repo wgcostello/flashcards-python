@@ -140,7 +140,28 @@ class Flashcards(dict):
             )
 
     def import_file(self, filename: str | None = None) -> None:
-        if filename is None:
+        if not filename:
+            filename = get_user_input("File name:")
+
+        try:
+            with open(filename, encoding="utf-8") as file:
+                reader = csv.DictReader(file)
+                cards_loaded = 0
+                for line in reader:
+                    try:
+                        term = line["Term"]
+                        definition = line["Definition"]
+                        error_count = int(line["Error Count"])
+                        self[term] = Card(definition, error_count)
+                        cards_loaded += 1
+                    except (ValueError, KeyError):
+                        log_message(
+                            f'Error reading file "{filename}": invalid file format.'
+                        )
+                        return
+            log_message(f"{cards_loaded} cards have been loaded.")
+        except FileNotFoundError:
+            log_message("File not found.") filename is None:
             filename = get_user_input("File name:")
 
         try:
